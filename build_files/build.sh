@@ -18,6 +18,10 @@ dnf5 install -y htop
 
 # Use a COPR Example:
 #
+
+# Terra
+dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+
 # dnf5 -y copr enable ublue-os/staging
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
