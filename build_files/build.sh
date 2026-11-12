@@ -55,5 +55,11 @@ dnf5 install -y htop
 
 systemctl enable podman.socket
 
+#### Fixing grub
 
+echo "${IMAGE_PRETTY_NAME} release One (RainDrop)" > /etc/system-release
 
+# Correct the EFIDIR path since ID is no longer fedora.
+sed -i \
+  "s/^EFIDIR=.*/EFIDIR=\"fedora\"/" \
+  /usr/sbin/grub2-switch-to-blscfg
