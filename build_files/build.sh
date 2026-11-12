@@ -9,13 +9,13 @@ IMAGE_LIKE="fedora"
 
 tee /usr/lib/os-release <<EOF
 NAME="${IMAGE_PRETTY_NAME}"
-VERSION="$1.0 (One)"
+VERSION="1.0 (One)"
 RELEASE_TYPE=development
 ID=aquaos
 ID_LIKE="${IMAGE_LIKE}"
-VERSION_ID=$1
-VERSION_CODENAME="$RainDrop"
-PRETTY_NAME="$AquaOS"
+VERSION_ID=1
+VERSION_CODENAME="RainDrop"
+PRETTY_NAME="${IMAGE_PRETTY_NAME}"
 ANSI_COLOR="0;38;2;255;255;255"
 CPE_NAME="cpe:/o:aqua-computing:aquaos-1"
 DEFAULT_HOSTNAME="aqua"
@@ -23,11 +23,11 @@ HOME_URL="https://github.com/Aqua-Computing/AquaOS"
 DOCUMENTATION_URL="https://github.com/Aqua-Computing/AquaOS"
 SUPPORT_URL="https://github.com/Aqua-Computing/AquaOS/issues"
 BUG_REPORT_URL="https://github.com/Aqua-Computing/AquaOS/issues"
-SUPPORT_END=$2027-12-31
-OSTREE_VERSION='$1.0'
-BUILD_ID="$Development 1.0"
+SUPPORT_END=2027-12-31
+OSTREE_VERSION='1.0'
+BUILD_ID="Development 1.0"
 BOOTLOADER_NAME="${IMAGE_PRETTY_NAME} One"
-IMAGE_ID="$aquaos-1.0"
+IMAGE_ID="aquaos-1.0"
 EOF
 
 # Copy the contents of system_files/ of the git repo to /
