@@ -20,7 +20,7 @@ dnf5 install -y htop
 #
 
 # Terra
-dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
 # dnf5 -y copr enable ublue-os/staging
 # dnf5 -y install package
